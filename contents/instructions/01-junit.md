@@ -154,12 +154,15 @@ Clone the project from [nextflow-java-unit-test](https://github.com/teerasej/nex
     > <img width="640" alt="2024-10-08_13-17-51" src="https://github.com/user-attachments/assets/f696fd91-6509-4faf-8caf-fea934dd1331">
 
 
-6. You will see the **Test Results** in the bottom of the window with timestamp in run the test. You can select the test case to 
+6. You will see the **Test Results** in the bottom of the window with timestamp in run the test.
+
+    <img width="949" alt="Screenshot 2567-10-08 at 13 25 43" src="https://github.com/user-attachments/assets/e855dcb4-2506-480e-b22c-9815016480f2">
 
 ### 2. Add more test cases
 
 1. Open `CalculatorTest` class in `src/test/java/th/in/nextflow/CalculatorTest.java`
 2. Update the `CalculatorTest` class with the following code:
+
 
     ```java
     package th.in.nextflow;
