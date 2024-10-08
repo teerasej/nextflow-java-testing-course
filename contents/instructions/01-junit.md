@@ -63,8 +63,10 @@
 ## Exercise 2: Explore the calculator
 
 1. Open the project in Visual Studio Code
-2. Open the `Calculator` class in `src/main/java/th/in/nextflow/Calculator.java`
-3. You should see the following implemented code in this class:
+2. In the Explorer pane, expand the **Java Projects** section at the bottom of the pane, you should see the `nextflow-java-unittest` project.
+3. Right-click on the project's name, then select **Rebuild project** from the menu.
+4. Open the `Calculator` class in `src/main/java/th/in/nextflow/Calculator.java`
+5. You should see the following implemented code in this class:
 
     ```java
     package th.in.nextflow;
@@ -76,7 +78,7 @@
     }
     ```
 
-4. Open the `Main` class in `src/main/java/th/in/nextflow/Main.java`, you should see the following implemented code in this class:
+6. Open the `Main` class in `src/main/java/th/in/nextflow/Main.java`, you should see the following implemented code in this class:
 
     ```java
     package th.in.nextflow;
@@ -92,7 +94,7 @@
     }
     ```
 
-5. Run the `Main` class by using following methods:
+7. Run the `Main` class by using following methods:
    1. right-clicking on the file and selecting `Run Java` from the context menu:
       <img width="638" alt="2024-10-08_12-41-30" src="https://github.com/user-attachments/assets/ad7caa87-54af-41cd-bf9e-8bd2dde4d11f">
 
@@ -102,7 +104,7 @@
    3. In the editor window, hover the `main` method and click on the `Run` (or `Debug`) to run the `Main` class.
       <img width="813" alt="2024-10-08_12-43-16" src="https://github.com/user-attachments/assets/a02f627e-209f-4b56-8cda-68451cf2385e">
 
-2. You should see the following output in the terminal:
+8. You should see the following output in the terminal:
 
     ```
     Hello world!
