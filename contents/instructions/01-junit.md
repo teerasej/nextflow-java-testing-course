@@ -13,7 +13,7 @@
     ```bash
     git clone https://github.com/teerasej/nextflow-java-unit-test/
     ```
-    Ensure you select `start` branch
+    Ensure you check out the `start` branch
 
 ## Exercise 1: Add dependecy in Maven
 
