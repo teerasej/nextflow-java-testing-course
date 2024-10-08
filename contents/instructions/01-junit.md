@@ -154,40 +154,46 @@ Clone the project from [nextflow-java-unit-test](https://github.com/teerasej/nex
     > <img width="640" alt="2024-10-08_13-17-51" src="https://github.com/user-attachments/assets/f696fd91-6509-4faf-8caf-fea934dd1331">
 
 
+6. You will see the **Test Results** in the bottom of the window with timestamp in run the test. You can select the test case to 
+
+### 2. Add more test cases
+
+1. Open `CalculatorTest` class in `src/test/java/th/in/nextflow/CalculatorTest.java`
+2. Update the `CalculatorTest` class with the following code:
+
+    ```java
+    package th.in.nextflow;
+
+    import static org.junit.jupiter.api.Assertions.assertEquals;
+
+    import org.junit.jupiter.api.Test;
+
+    public class CalculatorTest {
+        @Test
+        public void testAddPositiveNumbers() {
+            Calculator calculator = new Calculator();
+            assertEquals(5, calculator.add(2, 3));
+        }
+
+        @Test
+        public void testAddNegativeNumbers() {
+            Calculator calculator = new Calculator();
+            assertEquals(-5, calculator.add(-2, -3));
+        }
+
+        @Test
+        public void testAddWithZero() {
+            Calculator calculator = new Calculator();
+            assertEquals(2, calculator.add(2, 0));
+        }
+    }
+    ```
+
+3. Save file.
+4. Switch to the **Test Explorer**, you will see the test `testAddNegativeNumbers` and `testAddWithZero` are added to the list with some test buttons.
+5. Click on the **Run** button to run the test.
 6. You will see the **Test Results** in the bottom of the window with timestamp in run the test.
 
-    
+## Summary
 
-
-## เปลี่ยนแปลงการทำงานของ Class
-
-จำลองการแก้ไข class `Calculator` ที่ทำให้ผลการทำงานเปลี่ยนไปจากเดิม
-
-
-```java
-package th.in.nextflow;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import org.junit.jupiter.api.Test;
-
-public class CalculatorTest {
-    @Test
-    public void testAddPositiveNumbers() {
-        Calculator calculator = new Calculator();
-        assertEquals(5, calculator.add(2, 3));
-    }
-
-    @Test
-    public void testAddNegativeNumbers() {
-        Calculator calculator = new Calculator();
-        assertEquals(-5, calculator.add(-2, -3));
-    }
-
-    @Test
-    public void testAddWithZero() {
-        Calculator calculator = new Calculator();
-        assertEquals(2, calculator.add(2, 0));
-    }
-}
-```
+In this exercise, you have learned how to create a simple unit test using JUnit 5 in Java. You have also learned how to run the test using the Test Explorer in Visual Studio Code.
