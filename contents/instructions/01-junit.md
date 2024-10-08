@@ -121,9 +121,37 @@ Clone the project from [nextflow-java-unit-test](https://github.com/teerasej/nex
 
 
 
-คลิกเลือก Testing เราควรเห็นชื่อโปรเจค ชื่อ package และชื่อ class ที่เราจะรันทดสอบ
+## Exercise 5: Adding the unit test
 
-กดปุ่ม run test ที่ class `CalculatorTest` และดูผลลัพธ์ที่ได้
+### 1. Add the positive number test
+
+1. Open `CalculatorTest` class in `src/test/java/th/in/nextflow/CalculatorTest.java`
+2. Add the following code to the `CalculatorTest` class like below:
+
+    ```java
+    package th.in.nextflow;
+
+    import static org.junit.jupiter.api.Assertions.assertEquals;
+
+    import org.junit.jupiter.api.Test;
+
+    public class CalculatorTest {
+        @Test
+        public void testAddPositiveNumbers() {
+            Calculator calculator = new Calculator();
+            assertEquals(5, calculator.add(2, 3));
+        }
+
+    }
+    ```
+3. Save file.
+4. Switch to the **Test Explorer**, you will see the test `testAddPositiveNumbers` is added to the list with some test buttons.
+5. Click on the **Run** button to run the test.
+6. You will see the **Test Results** in the bottom of the window with timestamp in run the test.
+
+> **Note:** You can use `Run` button in front of line number in the code to run the test instead.
+> 
+
 
 
 ## เปลี่ยนแปลงการทำงานของ Class
