@@ -1,5 +1,5 @@
 
-# Lab 03: Test Coverage
+# Lab 03: Code Coverage
 
 > **Noted**: Please ensure you have setup the environment as mentioned in [setup](../setup.md) before proceeding with this lab.
 
