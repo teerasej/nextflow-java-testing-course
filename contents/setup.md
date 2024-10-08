@@ -28,6 +28,13 @@
 4. Web Browser สามารถเลือกระหว่าง 2 อย่างนี้ 
    1. Google Chrome ([Download](https://www.google.com/chrome/))
    2. Microsoft Edge ([Download](https://www.microsoft.com/en-us/edge/download))
+5. Maven 
+   1. MacOS 
+      1. ติดตั้ง [HomeBrew](https://brew.sh/) 
+      2. รันคำสั่ง `brew install maven` ใน Terminal
+   2. Windows (ติดตั้งผ่าน Chocolatey)
+      1. ติดตั้ง [Chotolatey](https://chocolatey.org/install#individual)
+      2. รันคำสั่ง `choco install maven` ใน Command Prompt
 
 ## 2. สมัคร Account ที่ควรมี
 
