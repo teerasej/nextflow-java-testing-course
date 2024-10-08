@@ -90,7 +90,7 @@ Hello world!
 </project>
 ```
 
-2. When asked about synchroniz the Java configuration, select `Yes` to confirm:
+2. When asked about synchronize the Java configuration, select `Yes` to confirm:
     <img width="491" alt="Screenshot 2567-10-08 at 12 55 44" src="https://github.com/user-attachments/assets/59270a08-0d68-44c5-9501-57e8cdbd647c">
 
 
