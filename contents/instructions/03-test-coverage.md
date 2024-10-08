@@ -82,7 +82,7 @@
 ## Exercise 2: Run the test with coverage 
 
 1. Switch to the **Test Explorer**.
-2. Click on the **Run** button on the project's scope to run the test.
+2. Click on the **Run with Code Coverage** button on the project's scope to run the test.
 3. After the test is completed, you will see the **Coverage** section below the **Test Explorer**. like the following image:
 
     ![Test Coverage](./images/test-coverage.png)
