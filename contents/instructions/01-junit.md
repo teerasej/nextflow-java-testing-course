@@ -147,10 +147,13 @@ Clone the project from [nextflow-java-unit-test](https://github.com/teerasej/nex
 3. Save file.
 4. Switch to the **Test Explorer**, you will see the test `testAddPositiveNumbers` is added to the list with some test buttons.
 5. Click on the **Run** button to run the test.
-6. You will see the **Test Results** in the bottom of the window with timestamp in run the test.
+    <img width="395" alt="2024-10-08_13-17-35" src="https://github.com/user-attachments/assets/07aea66f-5d5c-499e-8963-eac1b057ea36">
 
-> **Note:** You can use `Run` button in front of line number in the code to run the test instead.
-> 
+7. You will see the **Test Results** in the bottom of the window with timestamp in run the test.
+
+    > **Note:** You can use `Run` button in front of line number in the code to run the test instead.
+    > <img width="640" alt="2024-10-08_13-17-51" src="https://github.com/user-attachments/assets/f696fd91-6509-4faf-8caf-fea934dd1331">
+
 
 
 
