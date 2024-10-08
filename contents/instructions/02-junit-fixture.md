@@ -173,6 +173,123 @@
 1. Remove the break points in the `setUp` and `tearDown` methods.
 2. Remove the break points in the `testAddPositiveNumbers`, `testAddNegativeNumbers`, and `testAddWithZero` methods.
 
+## Exercise 2: Effect of don't using the test fixture
+
+1. Create a new Java class `Counter` in `src/main/java/th/in/nextflow` directory with the following code:
+
+    ```java
+    package th.in.nextflow;
+
+    public class Counter {
+        private int count;
+
+        public Counter() {
+            this.count = 0;
+        }
+
+        public void increment() {
+            count++;
+        }
+
+        public int getCount() {
+            return count;
+        }
+    }
+    ```
+
+2. Create its test class `CounterTest` in `src/test/java/th/in/nextflow` directory with the following code:
+
+    ```java
+    package th.in.nextflow;
+
+    import static org.junit.jupiter.api.Assertions.assertEquals;
+
+    import org.junit.jupiter.api.BeforeEach;
+    import org.junit.jupiter.api.AfterEach;
+    import org.junit.jupiter.api.Test;
+
+    public class CounterTest {
+        private static Counter counter = new Counter();
+
+        @Test
+        public void testIncrementOnce() {
+            counter.increment();
+            assertEquals(1, counter.getCount());
+        }
+
+        @Test
+        public void testIncrementTwice() {
+            counter.increment();
+            counter.increment();
+            assertEquals(2, counter.getCount());
+        }
+
+        @Test
+        public void testIncrementThrice() {
+            counter.increment();
+            counter.increment();
+            counter.increment();
+            assertEquals(3, counter.getCount());
+        }
+    }
+    ```
+
+3. Switch to the **Test Explorer**.
+4. Click on the **Run** button to run the test.
+5. You will see the unexpected failed test results which caused from the shared state (static) of the `Counter` instance.
+6. Back to the `CounterTest` class.
+7. Modify the Test to use the test fixture with `@BeforeEach` and `@AfterEach` methods.:
+
+```java
+package th.in.nextflow;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class CounterTest {
+    private static Counter counter;
+
+    @BeforeEach
+    public void setUp() {
+        counter = new Counter();
+    }
+
+    @AfterEach
+    public void tearDown() {
+        counter = null;
+    }
+
+    @Test
+    public void testIncrementOnce() {
+        counter.increment();
+        assertEquals(1, counter.getCount());
+    }
+
+    @Test
+    public void testIncrementTwice() {
+        counter.increment();
+        counter.increment();
+        assertEquals(2, counter.getCount());
+    }
+
+    @Test
+    public void testIncrementThrice() {
+        counter.increment();
+        counter.increment();
+        counter.increment();
+        assertEquals(3, counter.getCount());
+    }
+}
+```
+
+8. Save file.
+9. Switch to the **Test Explorer**.
+10. Click on the **Run** button to run the test.
+11. You will see the passed test results with the test fixture. because, event the `Counter` instance is shared, but it will be reset before each test unit.
+
 ## Summary
 
 In this lab, you have learned how to add the test fixture to the test units in JUnit 5. You have also learned how to use the `@BeforeEach` and `@AfterEach` methods to setup and clean up the test fixture before and after each test unit.
