@@ -156,7 +156,8 @@ Clone the project from [nextflow-java-unit-test](https://github.com/teerasej/nex
 
 6. You will see the **Test Results** in the bottom of the window with timestamp in run the test.
 
-    
+    <img width="949" alt="Screenshot 2567-10-08 at 13 25 43" src="https://github.com/user-attachments/assets/e855dcb4-2506-480e-b22c-9815016480f2">
+
 
 
 ## เปลี่ยนแปลงการทำงานของ Class
