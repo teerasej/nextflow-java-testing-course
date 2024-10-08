@@ -149,12 +149,14 @@ Clone the project from [nextflow-java-unit-test](https://github.com/teerasej/nex
 5. Click on the **Run** button to run the test.
     <img width="395" alt="2024-10-08_13-17-35" src="https://github.com/user-attachments/assets/07aea66f-5d5c-499e-8963-eac1b057ea36">
 
-7. You will see the **Test Results** in the bottom of the window with timestamp in run the test.
 
     > **Note:** You can use `Run` button in front of line number in the code to run the test instead.
     > <img width="640" alt="2024-10-08_13-17-51" src="https://github.com/user-attachments/assets/f696fd91-6509-4faf-8caf-fea934dd1331">
 
 
+6. You will see the **Test Results** in the bottom of the window with timestamp in run the test.
+
+    
 
 
 ## เปลี่ยนแปลงการทำงานของ Class
