@@ -9,31 +9,31 @@ Clone the project from [nextflow-java-unit-test](https://github.com/teerasej/nex
 2. Open the `Calculator` class in `src/main/java/th/in/nextflow/Calculator.java`
 3. You should see the following implemented code in this class:
 
-```java
-package th.in.nextflow;
+    ```java
+    package th.in.nextflow;
 
-public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
+    public class Calculator {
+        public int add(int a, int b) {
+            return a + b;
+        }
     }
-}
-```
+    ```
 
 4. Open the `Main` class in `src/main/java/th/in/nextflow/Main.java`, you should see the following implemented code in this class:
 
-```java
-package th.in.nextflow;
+    ```java
+    package th.in.nextflow;
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+    public class Main {
+        public static void main(String[] args) {
+            System.out.println("Hello world!");
 
-        // Using the Calculator class
-        Calculator calculator = new Calculator();
-        System.out.println("2 + 3 = " + calculator.add(2, 3));
+            // Using the Calculator class
+            Calculator calculator = new Calculator();
+            System.out.println("2 + 3 = " + calculator.add(2, 3));
+        }
     }
-}
-```
+    ```
 
 1. Run the `Main` class by using following methods:
    1. right-clicking on the file and selecting `Run Java` from the context menu:
@@ -47,69 +47,78 @@ public class Main {
 
 2. You should see the following output in the terminal:
 
-```
-Hello world!
-2 + 3 = 5
-```
+    ```
+    Hello world!
+    2 + 3 = 5
+    ```
 
 ## Exercise 2: Add dependecy in Maven
 
 1. Add `<dependencies>` section in `pom.xml` file, like below:
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <project xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        <modelVersion>4.0.0</modelVersion>
 
-    <groupId>th.in.nextflow</groupId>
-    <artifactId>nextflow-java-unittest</artifactId>
-    <version>1.0-SNAPSHOT</version>
+        <groupId>th.in.nextflow</groupId>
+        <artifactId>nextflow-java-unittest</artifactId>
+        <version>1.0-SNAPSHOT</version>
 
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-    </properties>
+        <properties>
+            <maven.compiler.source>17</maven.compiler.source>
+            <maven.compiler.target>17</maven.compiler.target>
+        </properties>
 
-    <!-- Here is the the junit api and junit engine -->
-    <dependencies>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.8.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.8.1</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+        <!-- Here is the the junit api and junit engine -->
+        <dependencies>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>5.8.1</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>5.8.1</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
 
-</project>
-```
+    </project>
+    ```
 
 2. When asked about synchronize the Java configuration, select `Yes` to confirm:
     <img width="491" alt="Screenshot 2567-10-08 at 12 55 44" src="https://github.com/user-attachments/assets/59270a08-0d68-44c5-9501-57e8cdbd647c">
 
 
+## Exercise 3: Create a test class
 
-## สร้าง Class Calculator
+1. Create a new package `th.in.nextflow` in `src/test/java` directory. For example, `src/test/java/th/in/nextflow`. 
 
-เราจะคลิกขวาที่ Class Calculator และเลือก 
+    > **Note:** You can right-click on the `src/test/java` directory and select `New Folder` to create a new package by type in: `th/in/nextflow`.
 
-```java
-package th.in.nextflow;
+2. From Explorer pane, Right-click on `th.in.nextflow` package and select `New Java File > Class`, then name the file as: `CalculatorTest`.
+3. You will see the `src/test/java/th/in/nextflow/CalculatorTest.java` file is created with the following code:
 
-public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
+    ```java
+    package th.in.nextflow;
+
+    public class CalculatorTest {
+
     }
-}
-```
+    ```
 
-## ใช้ Testing Tools
+## Exercise 4: Using the Test Explorer
+
+1. From Visual Studio Code, open the **Testing** pane to reach the **Test Explorer**, at the moment you should see the `project` in the list.
+2. Try to run the test by clicking on **Run** button on the `Project`.
+3. You will see the **Test Results** in the bottom of the window with timestamp in run the test.
+
+
+
 
 คลิกเลือก Testing เราควรเห็นชื่อโปรเจค ชื่อ package และชื่อ class ที่เราจะรันทดสอบ
 
@@ -119,3 +128,32 @@ public class Calculator {
 ## เปลี่ยนแปลงการทำงานของ Class
 
 จำลองการแก้ไข class `Calculator` ที่ทำให้ผลการทำงานเปลี่ยนไปจากเดิม
+
+
+```java
+package th.in.nextflow;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class CalculatorTest {
+    @Test
+    public void testAddPositiveNumbers() {
+        Calculator calculator = new Calculator();
+        assertEquals(5, calculator.add(2, 3));
+    }
+
+    @Test
+    public void testAddNegativeNumbers() {
+        Calculator calculator = new Calculator();
+        assertEquals(-5, calculator.add(-2, -3));
+    }
+
+    @Test
+    public void testAddWithZero() {
+        Calculator calculator = new Calculator();
+        assertEquals(2, calculator.add(2, 0));
+    }
+}
+```
