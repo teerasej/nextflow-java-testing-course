@@ -83,17 +83,18 @@
 
 1. Switch to the **Test Explorer**.
 2. Click on the **Run with Code Coverage** button on the project's scope to run the test.
-3. After the test is completed, you will see the **Coverage** section below the **Test Explorer**. like the following image:
+   <img width="542" alt="2024-10-08_16-41-52" src="https://github.com/user-attachments/assets/3eb6941c-d091-43de-8001-c798df6240ae">
 
-    ![Test Coverage](./images/test-coverage.png)
+4. After the test is completed, you will see the **Coverage** section below the **Test Explorer**. like the following image:
+    <img width="395" alt="2024-10-08_16-24-33" src="https://github.com/user-attachments/assets/58acfb46-7c5e-4b88-8699-42613ec3863a">
 
-4. Click on the **Calculator.java** which has 100% coverage, you will see the highlighted code in the editor.
+5. Click on the **Calculator.java** which has 100% coverage, you will see the highlighted code in the editor.
+    <img width="585" alt="2024-10-08_16-27-17" src="https://github.com/user-attachments/assets/06c389d6-bc58-4ca9-a228-e441d6ab76ef">
 
-    ![Test Coverage](./images/test-coverage-highlight.png)
 
-5. Click on the **Main.java** which has 0% coverage, you will see the **red** highlighted code in the editor.
+6. Click on the **Main.java** which has 0% coverage, you will see the **red** highlighted code in the editor.
+    <img width="827" alt="2024-10-08_16-24-39" src="https://github.com/user-attachments/assets/d80e67a7-2c79-462c-ad7a-563b92b8f1d6">
 
-    ![Test Coverage](./images/test-coverage-main.png)
 
 ## Summary
 
