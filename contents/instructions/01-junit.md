@@ -35,10 +35,16 @@ public class Main {
 }
 ```
 
-5. Run the `Main` class by using following methods:
-   1. right-clicking on the file and selecting `Run` from the context menu. You should see the following output in the terminal:
-   2. Go to debug pane on the left side of the window, click on the **Run and debug** button to run the `Main` class.
-   3. In the editor window, hover the `main` method and click on the `Run` (or `Debug`) to run the `Main` class.
+5. Run the `Main` class by using following methods, You should see the following output in the terminal:
+   1. right-clicking on the file and selecting `Run Java` from the context menu:
+      <img width="638" alt="2024-10-08_12-41-30" src="https://github.com/user-attachments/assets/ad7caa87-54af-41cd-bf9e-8bd2dde4d11f">
+
+   3. Go to debug pane on the left side of the window, click on the **Run and debug** button to run the `Main` class.
+      <img width="407" alt="2024-10-08_12-42-33" src="https://github.com/user-attachments/assets/0e2a467a-f680-425c-a5df-8c40f6e6f863">
+
+   5. In the editor window, hover the `main` method and click on the `Run` (or `Debug`) to run the `Main` class.
+      <img width="813" alt="2024-10-08_12-43-16" src="https://github.com/user-attachments/assets/a02f627e-209f-4b56-8cda-68451cf2385e">
+
 
 
 
