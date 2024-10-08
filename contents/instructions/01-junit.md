@@ -1,58 +1,19 @@
 
-# Understanding Unit Testing with JUnit
+# Lab 01: Understanding Unit Testing with JUnit
 
-Clone the project from [nextflow-java-unit-test](https://github.com/teerasej/nextflow-java-unit-test/tree/start)
+> **Noted**: Please ensure you have setup the environment as mentioned in [setup](../setup.md) before proceeding with this lab.
 
-## Exercise 1: Explore the calculator
+## Exercise 0: Prepare the environment
 
-1. Open the project in Visual Studio Code
-2. Open the `Calculator` class in `src/main/java/th/in/nextflow/Calculator.java`
-3. You should see the following implemented code in this class:
+1. Open Visual Studio Code
+2. Download the project from [nextflow-java-unit-test](https://github.com/teerasej/nextflow-java-unit-test/tree/start) as **start** branch
 
-    ```java
-    package th.in.nextflow;
+    > **Note:** You can clone the project by using the following command in the terminal:
 
-    public class Calculator {
-        public int add(int a, int b) {
-            return a + b;
-        }
-    }
+    ```bash
+    git clone https://github.com/teerasej/nextflow-java-unit-test/
     ```
-
-4. Open the `Main` class in `src/main/java/th/in/nextflow/Main.java`, you should see the following implemented code in this class:
-
-    ```java
-    package th.in.nextflow;
-
-    public class Main {
-        public static void main(String[] args) {
-            System.out.println("Hello world!");
-
-            // Using the Calculator class
-            Calculator calculator = new Calculator();
-            System.out.println("2 + 3 = " + calculator.add(2, 3));
-        }
-    }
-    ```
-
-1. Run the `Main` class by using following methods:
-   1. right-clicking on the file and selecting `Run Java` from the context menu:
-      <img width="638" alt="2024-10-08_12-41-30" src="https://github.com/user-attachments/assets/ad7caa87-54af-41cd-bf9e-8bd2dde4d11f">
-
-   2. Go to debug pane on the left side of the window, click on the **Run and debug** button to run the `Main` class.
-      <img width="407" alt="2024-10-08_12-42-33" src="https://github.com/user-attachments/assets/0e2a467a-f680-425c-a5df-8c40f6e6f863">
-
-   3. In the editor window, hover the `main` method and click on the `Run` (or `Debug`) to run the `Main` class.
-      <img width="813" alt="2024-10-08_12-43-16" src="https://github.com/user-attachments/assets/a02f627e-209f-4b56-8cda-68451cf2385e">
-
-2. You should see the following output in the terminal:
-
-    ```
-    Hello world!
-    2 + 3 = 5
-    ```
-
-## Exercise 2: Add dependecy in Maven
+    Ensure you select `start` branch
 
 1. Add `<dependencies>` section in `pom.xml` file, like below:
 
