@@ -117,6 +117,7 @@ Clone the project from [nextflow-java-unit-test](https://github.com/teerasej/nex
 2. Try to run the test by clicking on **Run** button on the `Project`.
 3. You will see the **Test Results** in the bottom of the window with timestamp in run the test.
 
+<img width="1188" alt="2024-10-08_13-10-53" src="https://github.com/user-attachments/assets/9ccbde1e-058d-4f43-9da6-d598d5534783">
 
 
 
