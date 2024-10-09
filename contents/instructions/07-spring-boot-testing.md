@@ -388,4 +388,4 @@
    
 ## Summary
 
-In this exercise, you have learned how to create a simple unit test using JUnit 5 in Java. You have also learned how to run the test using the Test Explorer in Visual Studio Code.
+In this lab, we created an integration test for the Spring Boot application. We used the `@SpringBootTest` annotation to run the test using the Spring Boot test environment. We also used the `@AutoConfigureMockMvc` annotation to automatically configure the MockMvc instance. We used the `@MockBean` annotation to mock the ProfileService instance. We also used the `@Bean` annotation to provide the RestTemplate instance to the application context.

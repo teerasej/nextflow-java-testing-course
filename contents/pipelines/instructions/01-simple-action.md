@@ -105,3 +105,7 @@
 6. click on the **Build my project** workflow to see the details of the workflow.
 7. Explore the logs and the steps of the workflow.
 8. If the workflow is successful, you will see the **blue** checkmark on the top of the page.
+
+## Summary
+
+In this lab, we created a new workflow that builds and tests the project. We used the `workflow_dispatch` event to trigger the workflow manually. We also learned how to run multiple jobs in a workflow.
