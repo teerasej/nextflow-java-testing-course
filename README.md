@@ -13,3 +13,7 @@
 4. [Parameterized Test in JUnit](contents/instructions/04-paremeterized-test.md)
 5. [Exception Test](contents/instructions/05-exception-test.md)
 6. [Time out Test](contents/instructions/06-timeout-test.md)
+
+## Spring Boot Lab
+
+- [Spring Boot Testing](contents/instructions/07-spring-boot-testing.md)
