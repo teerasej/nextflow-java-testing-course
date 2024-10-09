@@ -12,36 +12,37 @@
 3. Click on edit button to edit the workflow.
 4. Modify the code like below:
 
-    ```yml
-    name: Build and run
+```yml
+name: Build and run
 
-    on:
-        pull_request:
-            branches:
-                - main
-        workflow_dispatch:
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
 
-    jobs:
-        build:
-            runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-            steps:
-            - name: Checkout code
-            uses: actions/checkout@v2
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-            - name: Set up JDK 17
-            uses: actions/setup-java@v2
-            with:
-                java-version: '17'
-                distribution: 'temurin'
+    - name: Set up JDK 17
+      uses: actions/setup-java@v2
+      with:
+        java-version: '17'
+        distribution: 'temurin'
 
-            - name: Build with Maven
-            run: ./mvnw clean install
+    - name: Build with Maven
+      run: ./mvnw clean install
 
-            - name: Run tests
-            run: ./mvnw test
-    ```
-   
+    - name: Run tests
+      run: ./mvnw test
+```
+
+
 5. Select **Commit Changes** button on the top right corner of the page to save the changes.
 6. On the commit page, select **Create a new branch for this commit and start a pull request**.
 7. select **Commit change**
@@ -49,11 +50,7 @@
 9. Please notice that we have a workflow run to test the pull request. before merging the pull request.
 10. wait for the workflow to complete. then merge the pull request.
 
-## Challenge 1: Make the fault pull request 
 
-- Use the Java code in the repository to create a pull request that will fail the tests.
-- The pull request should not be merged until the tests pass.
-- Change the code in the repository to make the tests pass.
 
 ## Summary 
 

@@ -15,32 +15,32 @@
 4. Rename the file to `build-and-test.yml`.
 5. Provide the following code in 
 
-    ```yml
-    name: Build and Test
+```yml
+name: Build and run
 
-    on:
-        workflow_dispatch:
+on:
+  workflow_dispatch:
 
-    jobs:
-    build:
-        runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-        steps:
-        - name: Checkout code
-        uses: actions/checkout@v2
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-        - name: Set up JDK 17
-        uses: actions/setup-java@v2
-        with:
-            java-version: '17'
-            distribution: 'temurin'
+    - name: Set up JDK 17
+      uses: actions/setup-java@v2
+      with:
+        java-version: '17'
+        distribution: 'temurin'
 
-        - name: Build with Maven
-        run: ./mvnw clean install
+    - name: Build with Maven
+      run: ./mvnw clean install
 
-        - name: Run tests
-        run: ./mvnw test
-    ```
+    - name: Run tests
+      run: ./mvnw test
+```
 
 6. Notice that we have another job called `test` that runs the tests.
 7. Click on **Commit changes**

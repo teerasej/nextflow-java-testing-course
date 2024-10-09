@@ -56,36 +56,36 @@
 5. On the top, rename the file to `build.yml`.
 6. Modify the code like below:
 
-    ```yml
-    # This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-    # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
+```yml
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
 
-    # This workflow uses actions that are not certified by GitHub.
-    # They are provided by a third-party and are governed by
-    # separate terms of service, privacy policy, and support
-    # documentation.
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
 
-    name: Build my project
+name: Build my project
 
-    on:
-    work_dispatch:
+on:
+  workflow_dispatch:
 
-    jobs:
-    build:
+jobs:
+  build:
 
-        runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-        steps:
-        - uses: actions/checkout@v4
-        - name: Set up JDK 17
-        uses: actions/setup-java@v4
-        with:
-            java-version: '17'
-            distribution: 'temurin'
-            cache: maven
-        - name: Build with Maven
-        run: mvn -B package --file pom.xml
-    ```
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
+```
 
 7. Select **Commit Changes** button on the top right corner of the page to save the changes.
 8. Make a pull request and merge to the main branch. 
