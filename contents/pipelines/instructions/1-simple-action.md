@@ -10,7 +10,10 @@
 
 1. From the github repository, click on the **Actions** tab.
 2. Explore the available workflows and select **Set up this workflow** for the **Java with Maven** workflow.
-3. it will create a new file `.github/workflows/maven.yml` in the repository. Like example below:
+
+   <img width="1052" alt="2024-10-10_00-15-53" src="https://github.com/user-attachments/assets/dbd0f83d-e1ba-4e9a-b123-672b6cc0689a">
+
+4. it will create a new file `.github/workflows/maven.yml` in the repository. Like example below:
 
     ```yml
     # This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
@@ -50,8 +53,8 @@
         uses: advanced-security/maven-dependency-submission-action@571e99aab1055c2e71a1e2309b9691de18d6b7d6
     ```
 
-4. On the top, rename the file to `build.yml`.
-5. Modify the code like below:
+5. On the top, rename the file to `build.yml`.
+6. Modify the code like below:
 
     ```yml
     # This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
@@ -84,8 +87,8 @@
         run: mvn -B package --file pom.xml
     ```
 
-6. Select **Commit Changes** button on the top right corner of the page to save the changes.
-7. Make a pull request and merge to the main branch. 
+7. Select **Commit Changes** button on the top right corner of the page to save the changes.
+8. Make a pull request and merge to the main branch. 
 
     > **Note**: The workflow will be showed in the **Actions** tab. only when the workflow file (.yml) is in the main branch. (or default branch)
 
@@ -95,6 +98,9 @@
 2. Click on the **Build my project** workflow.
 3. Select **Run Workflow** button on the right side of the page.
 4. Select **Run Workflow** button on the pop-up dialog.
+
+    <img width="1655" alt="2024-10-10_00-42-22" src="https://github.com/user-attachments/assets/cc2e4159-b096-4de1-930e-d440d5bff896">
+
 5. Wait for the workflow's status show
 6. click on the **Build my project** workflow to see the details of the workflow.
 7. Explore the logs and the steps of the workflow.
