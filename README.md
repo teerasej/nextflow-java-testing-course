@@ -17,3 +17,8 @@
 ## Spring Boot Lab
 
 - [Spring Boot Testing](contents/instructions/07-spring-boot-testing.md)
+
+
+## Automation Testing Lab
+
+- [Automate with GitHub Actions](contents/pipelines/README.md)
